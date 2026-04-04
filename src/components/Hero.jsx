@@ -84,9 +84,9 @@ export default function Hero() {
       </p>
 
       {/* 📱 MOBILE LAYOUT - Vertical Stack */}
-      <div className="sm:hidden flex flex-col items-center justify-center gap-2 w-full px-3 pt-20">
+      <div className="sm:hidden flex flex-col items-center justify-center gap-1 w-full px-3 pt-12">
         {/* Badge for Mobile */}
-        <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-black/5 mb-2">
+        <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-black/5 mb-6">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-full w-full bg-green-500"></span>
@@ -97,14 +97,13 @@ export default function Hero() {
         </div>
 
         {/* Right Image for Mobile */}
-        <DecayCard src={rightImg} className="w-80 opacity-90" />
+        <DecayCard src={rightImg} className="w-72 opacity-90" />
 
         {/* Name for Mobile */}
         <img
           src={nameImg}
           alt="Mahesh Prayaga"
-          style={{ transform: `scale(${scale})` }}
-          className="w-80 object-contain transition-transform duration-200"
+          className="w-80 object-contain"
         />
 
         {/* Aspiring Text for Mobile */}
