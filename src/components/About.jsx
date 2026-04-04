@@ -1,5 +1,4 @@
 import BlurText from "./TextAnimation";
-import ShinyText from "./ShinyText";
 
 export default function About() {
   return (
@@ -43,33 +42,6 @@ export default function About() {
             animateBy="words"
             direction="bottom"
           />
-          {/* <ScrollReveal
-            baseOpacity={0.1}
-            enableBlur
-            baseRotation={2}
-            blurStrength={4}
-            textSize="text-[25px]"
-            textClassName="text-gray-300 font-dm font-bold"
-          >
-            As the Web Development Domain Lead at the GitHub Club GITAM, I’ve
-            led technical events and workshops, creating opportunities for
-            people to learn and build together. I’ve also led a team to develop
-            a hackathon website, where I handled both coordination and
-            development under tight timelines.
-          </ScrollReveal> */}
-          {/* <VariableProximity
-            label={
-              "I’m someone who enjoys building consistently and improving with every project, and I’m currently looking for internship opportunities where i can contribute to real-world products and grow as a developer."
-            }
-            className={"variable-proximity-demo"}
-            fromFontVariationSettings="'wght' 400, 'opsz' 9"
-            toFontVariationSettings="'wght' 1000, 'opsz' 40"
-            radius={110}
-            falloff="linear"
-          />
-          I’m someone who enjoys building consistently and improving with every
-          project, and I’m currently looking for internship opportunities where
-          I can contribute to real-world products and grow as a developer. */}
           {/* BUTTON */}
           <button className="mt-6 sm:mt-7 md:mt-8 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white text-black rounded-lg text-xs sm:text-sm font-medium">
             Contact Him →
