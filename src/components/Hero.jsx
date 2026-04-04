@@ -103,7 +103,7 @@ export default function Hero() {
         <img
           src={nameImg}
           alt="Mahesh Prayaga"
-          className="w-80 object-contain"
+          className="w-80 object-contain -mt-8"
         />
 
         {/* Aspiring Text for Mobile */}
