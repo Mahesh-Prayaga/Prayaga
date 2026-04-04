@@ -29,7 +29,7 @@ export default function About() {
           <br></br>
           <BlurText
             className="font-dm font-bold text-base sm:text-lg md:text-[20px] leading-[1.5] text-grey-400"
-            text="As the Web Development Domain Lead at the GitHub Club GITAM, I’ve led technical events and workshops, creating opportunities for people to learn and build together. I’ve also led a team to develop a hackathon website, where I handled both coordination and development under tight timelines."
+            text="As the Web Development Domain Lead at the GitHub Club GITAM, I’ve led technical events and workshops, creating opportunities for people to learn and build together. I’ve also led my team to develop a hackathon website, where I handled both coordination and development under tight timelines."
             delay={80}
             animateBy="words"
             direction="bottom"
