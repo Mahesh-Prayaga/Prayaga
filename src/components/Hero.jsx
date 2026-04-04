@@ -84,31 +84,31 @@ export default function Hero() {
       </p>
 
       {/* 📱 MOBILE LAYOUT - Vertical Stack */}
-      <div className="sm:hidden flex flex-col items-center justify-center gap-6 w-full px-4">
+      <div className="sm:hidden flex flex-col items-center justify-center gap-2 w-full px-3 pt-20">
         {/* Badge for Mobile */}
-        <div className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full shadow-sm border border-black/5">
+        <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-black/5 mb-2">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-full w-full bg-green-500"></span>
           </span>
           <p className="text-xs font-medium text-gray-700">
-            Open for Internship
+            Open for Internship Opportunities
           </p>
         </div>
 
         {/* Right Image for Mobile */}
-        <DecayCard src={rightImg} className="w-40 opacity-90" />
+        <DecayCard src={rightImg} className="w-80 opacity-90" />
 
         {/* Name for Mobile */}
         <img
           src={nameImg}
           alt="Mahesh Prayaga"
           style={{ transform: `scale(${scale})` }}
-          className="w-40 object-contain transition-transform duration-200"
+          className="w-80 object-contain transition-transform duration-200"
         />
 
         {/* Aspiring Text for Mobile */}
-        <p className="font-gothic tracking-wider text-sm text-700 text-center">
+        <p className="font-gothic tracking-wider text-base text-700 text-center -mt-8">
           Aspiring Full-stack Web Developer
         </p>
       </div>
