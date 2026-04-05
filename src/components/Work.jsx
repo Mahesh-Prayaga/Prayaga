@@ -2,39 +2,41 @@ import { useState } from "react";
 import BlurText from "./TextAnimation";
 import hackathonImg from "../assets/hackathon.png";
 import portfolioImg from "../assets/portfolio.png";
+import GlareHover from "./GlareHover";
 
 export default function Work() {
   const [activeSkill, setActiveSkill] = useState("Skills");
 
   const skills = [
     "Skills",
-    "UI/UX Design",
-    "User Research",
-    "Wireframing & Prototyping",
-    "Web Design",
-    "Logo Design",
+    "React.js",
+    "Node.js + Express",
+    "MongoDB",
+    "TailwindCSS",
+    "Git & GitHub",
+    "REST APIs",
   ];
 
   const projects = [
     {
       id: 1,
-      title: "TAM Optimization Tool",
+      title: "GIT-A-THON",
       subtitle:
-        "REQUIREMENT / INTERNAL TOOL / SUPPLY CHAIN / PROGRESSIVE WEB APP / UI/UX / PROCUREMENT",
+        "Built with Next.js and Supabase. Led my team to create an event discovery and registration platform for the hackathon.",
       image: hackathonImg,
       tags: ["UI/UX", "Web Design"],
-      liveUrl: "https://example.com/tam",
-      repoUrl: "https://github.com/maheshprayaga/tam-tool",
+      liveUrl: "https://git-a-thon-2025.vercel.app/",
+      repoUrl: "https://github.com/github-community-gitam/git-a-thon-2025",
     },
     {
       id: 2,
-      title: "KOTG Portal",
+      title: "Portfolio Website",
       subtitle:
-        "PROJECT MANAGEMENT / END-TO-END DESIGN / INTERNAL TOOL / UI/UX",
+        "Built with React + Vite + TailwindCSS. Modern, interactive portfolio showcasing my work and experience.",
       image: portfolioImg,
       tags: ["UI/UX", "Web Design"],
       liveUrl: "https://example.com/kotg",
-      repoUrl: "https://github.com/maheshprayaga/kotg-portal",
+      repoUrl: "https://github.com/Mahesh-Prayaga/Prayaga",
     },
   ];
 
@@ -86,14 +88,28 @@ export default function Work() {
                 />
                 {/* Hover Overlay with Buttons */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 sm:px-6 py-2 sm:py-2.5 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors text-xs sm:text-sm"
-                  >
-                    Live →
-                  </a>
+                  {project.id === 2 ? (
+                    <button
+                      disabled
+                      className="px-4 sm:px-6 py-2 sm:py-2.5 bg-white text-black rounded-lg font-medium transition-colors text-xs sm:text-sm group/live"
+                    >
+                      <span className="inline-block transition-all duration-300 opacity-100 group-hover/live:opacity-0 group-hover/live:hidden">
+                        Live →
+                      </span>
+                      <span className="hidden transition-all duration-300 opacity-0 group-hover/live:opacity-100 group-hover/live:inline">
+                        You are looking at it :)
+                      </span>
+                    </button>
+                  ) : (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 sm:px-6 py-2 sm:py-2.5 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors text-xs sm:text-sm"
+                    >
+                      Live →
+                    </a>
+                  )}
                   <a
                     href={project.repoUrl}
                     target="_blank"

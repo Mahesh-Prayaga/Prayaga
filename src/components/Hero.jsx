@@ -46,7 +46,7 @@ export default function Hero() {
       }}
     >
       {/* 🔹 TOP BADGE - Desktop Position */}
-      <div className="hidden sm:flex absolute top-28 flex items-center gap-2 bg-white px-3 sm:px-4 py-2 rounded-full shadow-sm border border-black/5 top-1/4 left-[40%]">
+      <div className="hidden sm:flex absolute left- top-32 flex items-center gap-2 bg-white px-3 sm:px-4 py-2 rounded-full shadow-sm border border-black/5 top-1/4 left-[40%]">
         {/* blinking dot */}
         <span className="relative flex h-2 sm:h-3 w-2 sm:w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
@@ -62,7 +62,7 @@ export default function Hero() {
       <div className="hidden sm:flex items-center justify-center gap-4 sm:gap-8 md:gap-16 w-full max-w-6xl px-4 sm:px-6 md:px-10">
         <DecayCard
           src={leftImg}
-          className="w-20 sm:w-32 md:w-[280px] opacity-80 -translate-y-3 sm:-translate-y-6"
+          className="w-20 sm:w-32 md:w-[280px] opacity-100 -translate-y-3 sm:-translate-y-6"
         />
 
         <img
@@ -74,7 +74,7 @@ export default function Hero() {
 
         <DecayCard
           src={rightImg}
-          className="w-24 sm:w-36 md:w-[320px] opacity-90 translate-y-3 sm:translate-y-6"
+          className="w-24 sm:w-36 md:w-[320px] opacity-100 translate-y-3 sm:translate-y-6"
         />
       </div>
 
@@ -97,7 +97,7 @@ export default function Hero() {
         </div>
 
         {/* Right Image for Mobile */}
-        <DecayCard src={rightImg} className="w-72 opacity-90" />
+        <DecayCard src={leftImg} className="w-72 opacity-90" />
 
         {/* Name for Mobile */}
         <img
