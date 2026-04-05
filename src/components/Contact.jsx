@@ -31,7 +31,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative z-20 bg-white text-black min-h-screen px-4 sm:px-8 md:px-16 lg:px-20 py-20 md:py-28"
+      className="relative z-20 bg-white text-black min-h-screen px-4 sm:px-8 md:px-16 lg:px-20 pt-20 md:pt-28 pb-10"
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
@@ -80,11 +80,11 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
+        <div className="mb-20"></div>
         {/* Footer */}
-        <div className="mt-20 pt-10 border-t border-gray-200 text-center">
+        <div className="mt-50 pt-10 border-t border-gray-200 text-center">
           <p className="text-gray-500 text-sm">
-            Prefer quick chats? Connect with me on social platforms above.
+            Made with &lt;3 by Mahesh Prayaga
           </p>
         </div>
       </div>
