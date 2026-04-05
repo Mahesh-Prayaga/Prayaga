@@ -1,5 +1,6 @@
 import BlurText from "./TextAnimation";
 import GlareHover from "./GlareHover";
+import { Calendar, MapPin } from "lucide-react";
 
 export default function Experience() {
   const experiences = [
@@ -94,12 +95,12 @@ export default function Experience() {
                   {/* Meta */}
                   <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-4">
                     <div className="flex items-center gap-1">
-                      <span>📅</span>
+                      <Calendar size={16} className="text-gray-400" />
                       <span>{exp.duration}</span>
                     </div>
 
                     <div className="flex items-center gap-1">
-                      <span>📍</span>
+                      <MapPin size={16} className="text-gray-400" />
                       <span>{exp.location}</span>
                     </div>
                   </div>

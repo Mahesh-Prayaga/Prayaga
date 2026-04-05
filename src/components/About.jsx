@@ -1,6 +1,13 @@
 import BlurText from "./TextAnimation";
+import { lenis } from "../main";
 
 export default function About() {
+  const scrollTo = (target) => {
+    lenis.scrollTo(target, {
+      offset: -100, // adjust based on navbar height
+      duration: 1.2,
+    });
+  };
   return (
     <div
       className="relative z-20 bg-black text-white min-h-screen px-4 sm:px-8 md:px-20 py-16 sm:py-24 md:py-32"
@@ -46,8 +53,11 @@ export default function About() {
             direction="bottom"
           />
           {/* BUTTON */}
-          <button className="mt-6 sm:mt-7 md:mt-8 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white text-black rounded-lg text-xs sm:text-sm font-medium">
-            Contact Him →
+          <button
+            onClick={() => scrollTo("#contact")}
+            className="mt-6 sm:mt-7 md:mt-8 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white text-black rounded-lg text-xs sm:text-sm font-medium"
+          >
+            Have a chat with me →
           </button>
         </div>
       </div>
