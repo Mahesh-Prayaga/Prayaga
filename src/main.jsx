@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Lenis from "@studio-freight/lenis";
 
-const lenis = new Lenis({
+export const lenis = new Lenis({
   duration: 4,
   smooth: true,
 });

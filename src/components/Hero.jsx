@@ -44,9 +44,10 @@ export default function Hero() {
         backgroundImage: `linear-gradient(to right, #dcdcdc 0.8px, transparent 0.5px)`,
         backgroundSize: "18px 100%",
       }}
+      id="hero"
     >
       {/* 🔹 TOP BADGE - Desktop Position */}
-      <div className="hidden sm:flex absolute left- top-32 flex items-center gap-2 bg-white px-3 sm:px-4 py-2 rounded-full shadow-sm border border-black/5 top-1/4 left-[40%]">
+      <div className="hidden sm:flex absolute  top-33 flex items-center gap-2 bg-white px-3 sm:px-4 py-2 rounded-full shadow-sm border border-black/5 top-1/4 left-[40%]">
         {/* blinking dot */}
         <span className="relative flex h-2 sm:h-3 w-2 sm:w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
@@ -106,10 +107,20 @@ export default function Hero() {
           className="w-80 object-contain -mt-8"
         />
 
-        {/* Aspiring Text for Mobile */}
-        <p className="font-gothic tracking-wider text-base text-700 text-center -mt-8">
-          Aspiring Full-stack Web Developer
-        </p>
+        <div className="hidden sm:flex flex-col items-center absolute left-[38%] bottom-[20%] gap-3">
+          <p className="font-gothic tracking-wider text-xs sm:text-sm md:text-xl text-700">
+            Aspiring Full-stack Web Developer
+          </p>
+
+          <button
+            onClick={() =>
+              window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+            }
+            className="px-4 py-2 text-xs sm:text-sm rounded-full border border-black/20 hover:bg-black hover:text-white transition-all duration-300"
+          >
+            Scroll ↓
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -59,7 +59,10 @@ export default function Contact() {
   ];
 
   return (
-    <div className="relative z-20 bg-white text-black min-h-screen px-4 sm:px-8 md:px-16 lg:px-20 py-16 sm:py-20 md:py-32">
+    <div
+      id="contact"
+      className="relative z-20 bg-white text-black min-h-screen px-4 sm:px-8 md:px-16 lg:px-20 py-16 sm:py-20 md:py-32"
+    >
       {/* Section Header */}
       <div className="max-w-6xl mx-auto">
         {/* Heading */}

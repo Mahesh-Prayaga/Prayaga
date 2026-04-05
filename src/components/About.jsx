@@ -2,7 +2,10 @@ import BlurText from "./TextAnimation";
 
 export default function About() {
   return (
-    <div className="relative z-20 bg-black text-white min-h-screen px-4 sm:px-8 md:px-20 py-16 sm:py-24 md:py-32">
+    <div
+      className="relative z-20 bg-black text-white min-h-screen px-4 sm:px-8 md:px-20 py-16 sm:py-24 md:py-32"
+      id="about"
+    >
       {/* 🔥 GRID LAYOUT */}
       <div className="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] gap-8 md:gap-20 items-start">
         {/* LEFT */}
