@@ -133,9 +133,13 @@ export default function Experience() {
             Want to know more about my journey?
           </p>
 
-          <button className="px-8 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition">
+          <a
+            href="/resume.pdf"
+            download="Mahesh_Prayaga_Resume.pdf"
+            className="inline-block px-8 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition"
+          >
             Download Resume →
-          </button>
+          </a>
         </div>
       </div>
     </div>

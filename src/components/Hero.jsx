@@ -80,8 +80,8 @@ export default function Hero() {
       </div>
 
       {/* 🔹 BOTTOM TEXT - Desktop Position */}
-      <p className="hidden sm:block font-gothic absolute left-[38%] bottom-[25%] tracking-wider text-xs sm:text-sm md:text-xl text-700">
-        Aspiring Full-stack Web Developer
+      <p className="hidden sm:block font-gothic absolute left-[41%] bottom-[25%] tracking-wider text-xs sm:text-sm md:text-xl text-700">
+        Full-stack Web Developer
       </p>
 
       {/* 📱 MOBILE LAYOUT - Vertical Stack */}
